@@ -10,7 +10,7 @@ public class ConnectionManager {
 		Connection con = null;
 		Properties properties;
 		try {
-			properties = ConnectionManager.loadPropertiesFile() ;
+			properties = ConnectionManager.loadPropertiesFile();
 		
 		//take the required properties out of properties object
 		final String driver,url,username,password;
@@ -36,4 +36,5 @@ public class ConnectionManager {
 		in.close();
 		return prop;
 	}
+	
 }
